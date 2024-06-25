@@ -1,0 +1,56 @@
+@import '../colors.css';
+
+.classic-theme {
+    --theme-error-text: var(--clr-red);
+    --theme-bg-hover: var(--clr-light-grey);
+    --theme-bg-primary: var(--clr-light-grey);
+    --theme-bg-secondary: var(--clr-light-white);
+    --theme-border-primary: var(--clr-black);
+    --theme-border-radius: 0;
+    --theme-btn-bg: var(--clr-grey);
+    --theme-btn-bg-hover: var(--clr-light-grey);
+    --theme-btn-text: var(--clr-black);
+    --theme-logo-gradient: none;
+    --theme-text: var(--clr-black);
+
+    --theme-options-bg: var(--clr-dark-blue);
+    --theme-options-dropdown: var(--clr-dark-blue);
+    --theme-options-hover: var(--clr-grey);
+    --theme-options-text: var(--clr-white);
+}
+
+.classic-theme body {
+    animation: none;
+    background-color: var(--clr-dark-teal);
+}
+
+.classic-theme main {
+    animation: none;
+    background-color: var(--clr-teal);
+}
+
+.classic-theme #main-gradient {
+    background-image: none;
+}
+
+.classic-theme .options-bar {
+    margin-bottom: .5rem;
+    padding: 0;
+}
+
+.classic-theme .logo {
+    color: var(--clr-black);
+}
+
+.classic-theme #transformer-container {
+    border: 2px solid var(--clr-black);
+    box-shadow: none;
+    padding-top: 0;
+}
+
+.classic-theme .page-overlay header {
+    background: var(--theme-bg-primary);
+    border: 8px double var(--theme-border-primary);
+    box-shadow: none;
+    color: var(--theme-text);
+}

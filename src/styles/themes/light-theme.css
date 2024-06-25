@@ -1,0 +1,28 @@
+@import '../colors.css';
+
+html {
+    --theme-error-text: var(--clr-red);
+    --theme-bg-hover: var(--clr-orange);
+    --theme-bg-primary: var(--clr-white);
+    --theme-bg-secondary: var(--clr-light-white);
+    --theme-border-primary: var(--clr-blue);
+    --theme-border-radius: 6px;
+    --theme-btn-bg: var(--clr-blue);
+    --theme-btn-bg-hover: var(--clr-dark-blue);
+    --theme-btn-text: var(--clr-white);
+    --theme-logo-gradient: linear-gradient(var(--clr-blue) 50%, var(--clr-dark-blue));
+    --theme-text: var(--clr-black);
+
+    --theme-options-bg: transparent;
+    --theme-options-dropdown: var(--clr-white);
+    --theme-options-hover: var(--clr-orange);
+    --theme-options-text: var(--clr-black);
+}
+
+body {
+    background-color: var(--clr-dark-blue);
+}
+
+main {
+    background-color: var(--clr-blue);
+}

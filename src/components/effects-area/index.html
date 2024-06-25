@@ -1,0 +1,110 @@
+<link rel='stylesheet' href='../../styles/inputs.css' />
+
+<form>
+    <fieldset id='effects-grid'>
+        <label class='input-elem'>
+            Blur
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='blur' data-effect-key='blur' />
+                <input type='range' min='0' max='3' step='.1' disabled data-effect-key='blur' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Brighten
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='brighten' data-effect-key='brighten' />
+                <input type='range' min='0' max='3' step='.1' disabled data-effect-key='brighten' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Contrast
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='contrast' data-effect-key='contrast' />
+                <input type='range' min='0' max='3' step='.1' disabled data-effect-key='contrast' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Grayscale
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='grayscale' data-effect-key='grayscale' />
+                <input type='range' min='0' max='1' step='.1' disabled data-effect-key='grayscale' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Hue Rotate
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='hueRotate' data-effect-key='hueRotate' />
+                <input type='range' min='0' max='360' step='10' disabled data-effect-key='hueRotate' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Invert
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='invert' data-effect-key='invert' />
+                <input type='range' min='0' max='1' step='.1' disabled data-effect-key='invert' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Opacity
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='opacity' data-effect-key='opacity' />
+                <input type='range' min='0' max='1' step='.1' disabled data-effect-key='opacity' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Saturate
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='saturate' data-effect-key='saturate' />
+                <input type='range' min='0' max='3' step='.1' disabled data-effect-key='saturate' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Sepia
+            <div class='filter-inputs'>
+                <input type='checkbox' data-filter-key='sepia' data-effect-key='sepia' />
+                <input type='range' min='0' max='1' step='.1' disabled data-effect-key='sepia' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Rotate
+            <div class='filter-inputs'>
+                <input type='checkbox' data-effect-key='rotate' />
+                <input type='range' min='-180' max='180' step='10' disabled data-effect-key='rotate' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Width
+            <div class='filter-inputs'>
+                <input type='checkbox' data-effect-key='width' />
+                <input id='slider-width' type='range' min='0.02' max='3' step='.02' disabled data-effect-key='width' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            Height
+            <div class='filter-inputs'>
+                <input type='checkbox' data-effect-key='height' />
+                <input id='slider-height' type='range' min='.02' max='3' step='.02' disabled data-effect-key='height' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            <input type='checkbox' id='chkAspectRatio' data-effect-key='aspectRatio' />
+            Maintain Aspect Ratio
+        </label>
+        <label class='input-elem'>
+            Background Color
+            <div class='filter-inputs'>
+                <input type='checkbox' data-effect-key='bgColor' />
+                <input type='color' value='#000000' disabled
+                    data-effect-key='bgColor' />
+            </div>
+        </label>
+        <label class='input-elem'>
+            <input type='checkbox' data-effect-key='flipHorizontal' />
+            Flip Horizontally
+        </label>
+        <label class='input-elem'>
+            <input type='checkbox' data-effect-key='flipVertical' />
+            Flip Vertically
+        </label>
+    </fieldset>
+</form>

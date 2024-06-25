@@ -1,0 +1,26 @@
+:host {
+	align-items: center;
+	background-color: #000b;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	position: fixed;
+	width: 100vw;
+	z-index: var(--z-index-overlay);
+}
+
+header {
+	background-image: linear-gradient(var(--clr-blue), var(--clr-purple));
+	border-radius: var(--theme-border-radius);
+	box-shadow: 0 0 10px var(--clr-black) inset, -10px 10px 20px var(--clr-black);
+	color: var(--clr-white);
+	max-width: 24rem;
+	padding: 4rem 1rem;
+	text-align: center;
+	text-shadow: 0px 2px var(--clr-black);
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: bolder;
+}

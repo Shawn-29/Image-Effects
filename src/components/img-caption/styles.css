@@ -1,0 +1,14 @@
+figure {
+	margin: 0;
+}
+
+figcaption {
+    text-align: left;
+}
+
+.image-wrapper {
+	background-color: var(--clr-light-white);
+	height: 22rem;
+	outline: 1px solid #0003;
+	overflow: auto;
+}

@@ -1,0 +1,24 @@
+<link rel='stylesheet' href='../../styles/inputs.css' />
+<script src='../text-input/index.ts' type='module'></script>
+
+<h3>Save Options</h3>
+<text-input
+    label='Filename'
+    required
+    pattern='^(\w|-| ){1,255}$'
+    hint='Enter only letters, numbers, and spaces.'
+    errorText='Please enter only valid characters.'
+></text-input>
+<label>
+    Type
+    <select>
+        <option>jpeg</option>
+        <option>png</option>
+        <option>svg</option>
+    </select>
+</label>
+<label id='quality-settings' class='input-elem'>
+    Quality<input id='quality-slider' type='range' value='75' min='5' max='100' step='5' /><span
+        id='quality-text'></span>
+</label>
+<button class='btn' type='submit'>Save</button>

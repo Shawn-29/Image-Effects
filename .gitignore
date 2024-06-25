@@ -1,0 +1,9 @@
+/.parcel-cache
+/dist
+/node_modules
+/src/unused
+
+/TODO.txt
+/notes.txt
+
+coverage

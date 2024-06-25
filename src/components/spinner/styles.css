@@ -1,0 +1,28 @@
+:host {
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 99999;
+}
+
+div {
+    animation: spinning .5s infinite linear;
+    border: 6px solid var(--theme-border-primary);
+    border-radius: 50%;
+    border-top-color: var(--theme-bg-secondary);
+    box-shadow: 0 0 0 1px var(--theme-border-primary), 0 0 0 1px var(--theme-border-primary) inset;
+    height: 3rem;
+    inset: -100%;
+    margin: auto;
+    position: absolute;
+    width: 3rem;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

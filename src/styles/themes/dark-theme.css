@@ -1,0 +1,28 @@
+@import '../colors.css';
+
+.dark-theme {
+    --theme-error-text: var(--clr-light-red);
+    --theme-bg-hover: var(--clr-blue);
+    --theme-bg-primary: var(--clr-black);
+    --theme-bg-secondary: var(--clr-dark-grey);
+    --theme-border-primary: var(--clr-light-grey);
+    --theme-border-radius: 6px;
+    --theme-btn-bg: var(--clr-light-blue);
+    --theme-btn-bg-hover: var(--clr-blue);
+    --theme-btn-text: var(--clr-black);
+    --theme-logo-gradient: linear-gradient(var(--clr-white) 33%, var(--clr-light-blue), var(--clr-blue));
+    --theme-text: var(--clr-white);
+
+    --theme-options-bg: transparent;
+    --theme-options-dropdown: var(--clr-black);
+    --theme-options-hover: var(--clr-blue);
+    --theme-options-text: var(--clr-white);
+}
+
+.dark-theme body {
+    background-color: var(--clr-black);
+}
+
+.dark-theme main {
+    background-color: var(--clr-light-blue);
+}

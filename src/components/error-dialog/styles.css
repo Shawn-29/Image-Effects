@@ -1,0 +1,33 @@
+:host {
+    left: 50%;
+    margin-top: 2rem;
+    max-width: 24rem;
+    opacity: 0;
+    padding: .5rem;
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%, -100%);
+    width: 100%;
+    z-index: 888;
+}
+
+article {
+    border: 2px solid;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px 1px;
+}
+
+.error {
+    background: var(--clr-light-red);
+    border-color: var(--clr-red);
+}
+
+.success {
+    background: var(--clr-light-green);
+    border-color: var(--clr-green);
+}
+
+.warning {
+    background-color: var(--clr-light-yellow);
+    border-color: var(--clr-dark-yellow);
+}

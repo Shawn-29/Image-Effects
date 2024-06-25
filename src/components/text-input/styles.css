@@ -1,0 +1,29 @@
+:host([disabled]) {
+    cursor: default;
+    opacity: .5;
+    user-select: none;
+}
+
+:host([disabled]) * {
+    cursor: default;
+}
+
+#input-label {
+    margin-right: .5rem;
+}
+
+#input-hint {
+    display: inline-block;
+    font-size: .75rem;
+    transform: skewX(-10deg);
+}
+
+#error-text {
+    display: none;
+    color: var(--theme-error-text);
+    margin: 0;
+}
+
+:host([invalid]) > #error-text {
+    display: block;
+}

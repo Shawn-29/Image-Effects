@@ -1,0 +1,86 @@
+:host {
+    background-color: var(--theme-options-bg);
+    color: var(--theme-options-text);
+    display: flex;
+    justify-content: flex-end;
+}
+
+li,
+summary {
+    cursor: pointer;
+}
+
+details {
+    border: 1px solid transparent;
+    position: relative;
+}
+
+details[open] {
+    border-color: var(--theme-border-primary);
+    border-radius: var(--border-radius);
+}
+
+summary {
+    border-radius: var(--theme-border-radius);
+    list-style: none;
+    padding: 4px;
+    user-select: none;
+}
+
+/* special fix required for Safari */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:hover {
+    background-color: var(--theme-options-hover);
+}
+
+ul {
+    background-color: var(--theme-options-dropdown);
+    border: 1px solid var(--theme-border-primary);
+    border-radius: var(--theme-border-radius);
+    list-style: none;
+    margin: 0;
+    padding: .5rem;
+    position: absolute;
+    right: 0;
+}
+
+li {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+summary::before,
+li::before {
+    background-color: var(--theme-options-text);
+    content: '';
+    display: inline-block;
+    height: 24px;
+    margin-right: 5px;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    width: 24px;
+}
+
+li:hover {
+    background-color: var(--theme-options-hover);
+}
+
+.selected {
+    outline: 1px solid var(--theme-options-text);
+}
+
+.svg-mask.light-theme::before {
+    mask-image: url('./svgs/sun.svg');
+}
+
+.svg-mask.dark-theme::before {
+    mask-image: url('./svgs/moon.svg');
+}
+
+.svg-mask.classic-theme::before {
+    mask-image: url('./svgs/classic.svg');
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="description"
+		content="A single-page app allowing users to quickly apply effects to images through their web browser." />
+	<title>Image Effects</title>
+	<link rel='stylesheet' href='./styles/normalize.css' />
+	<link rel='stylesheet' href='./styles/reset.css' />
+	<link rel='stylesheet' href='./styles/index.css' />
+	<script src='./components/spinner/index.ts' type='module' defer></script>
+	<script src='./components/theme-selector/index.ts' type='module' defer></script>
+	<script src='./components/app-main/index.ts' type='module' defer></script>
+</head>
+
+<body>
+	<div id='page-cover'>
+		<loading-spinner></loading-spinner>
+		<noscript>
+			<p>
+				JavaScript is disabled in your browser. Please
+				<a href="https://enable-javascript.com/" target="_blank" rel="noopener noreferrer">enable
+					JavaScript</a>,
+				then <a href="./">try again</a>.
+			</p>
+		</noscript>
+	</div>
+	<main>
+		<div id='main-gradient'></div>
+		<article id='app-container'>
+			<div class='options-bar'>
+				<theme-selector></theme-selector>
+			</div>
+			<div id='app-body'>
+				<header>
+					<h1 class='logo'>Image Effects</h1>
+					<p>
+						Need to do some basic image manipulation? Upload an image and
+						choose which effects you'd like to apply. It's that easy!
+					</p>
+				</header>
+				<app-main></app-main>
+			</div>
+		</article>
+	</main>
+	<footer>
+		<p>&copy;2023-2024 Image Effects. All Rights Reserved.</p>
+	</footer>
+</body>
+
+</html>

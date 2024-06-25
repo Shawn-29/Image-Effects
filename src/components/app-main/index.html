@@ -1,0 +1,33 @@
+<link rel='stylesheet' href='../../styles/inputs.css' />
+
+<!-- components -->
+<script src='../effects-area/index.ts' type='module'></script>
+<script src='../effect-image/index.ts' type='module'></script>
+<script src='../error-dialog/index.ts' type='module'></script>
+<script src='../img-caption/index.ts' type='module'></script>
+<script src='../page-overlay/index.ts' type='module'></script>
+<script src='../preview-image/index.ts' type='module'></script>
+<script src='../save-bar/index.ts' type='module'></script>
+<script src='../zoom-bar/index.ts' type='module'></script>
+
+<page-overlay></page-overlay>
+<error-dialog></error-dialog>
+<label id='img-uploader' class='btn'>
+    <input type="file" id="upload" accept=".png, .jpg, .jpeg, .bmp, .svg">
+    Upload GIF, PNG, JPG, BMP, or SVG
+</label>
+<article id='main'>
+    <aside>
+        <img-caption>
+            <preview-image slot='user-img'></preview-image>
+        </img-caption>
+        <img-caption caption='New Image'>
+            <effect-image slot='user-img'></effect-image>
+        </img-caption>
+        <zoom-bar></zoom-bar>
+    </aside>
+    <section id='ui'>
+        <effects-area></effects-area>
+        <save-bar></save-bar>
+    </section>
+</article>
